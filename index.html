@@ -1,173 +1,1065 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maxmum-scale=1.0,user-scalable=0">
-	<title>新闻APP</title>
-	<script src="js/swiper.jquery.min.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="js/mui.min.js"></script>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+    <script src="js/swiper.jquery.min.js"></script>
 	<script src="js/swiper.min.js"></script>
 	<script src="js/swiper.animate1.0.2.min.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/zepto.js"></script>
+	<script src="js/index.js"></script>
 	<link rel="stylesheet" href="css/swiper.min.css" />
 	<link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="css/iconfont.css">
 	<link rel="stylesheet" href="css/index.css" />
+    <script type="text/javascript" charset="utf-8">
+      	mui.init();
+    </script>
+    <style>
+		#swiper-container2{
+			position: fixed;
+			top: 0.9rem;
+			width: 7.5rem;
+			height: 0.8rem;
+			background: #F5F5F5;	
+			z-index: 999;
+		}
+		#swiper-container2 .swiper-slide{
+			height: 0.8rem;
+			font-size: 0.3rem;	
+			color: #8F8F8F;
+			text-align: center;
+			line-height: 0.8rem;
+			background: #F5F5F5;
+		}
+		#swiper-container3{
+			background: #fff;
+			margin-top: 1.7rem;
+		}
+		#swiper-container3 .swiper-slide{
+			font-size: 30px;
+			line-height: 500px;
+		}
+		#swiper-container2 .active-nav{
+			color: #407ECA;
+			border-bottom:2px solid #407ECA;
+			font-size: 0.36rem;
+		}
+		.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+		    bottom: -220px;
+		}
+    </style>
 </head>
 <body>
-	<div class="swiper-container">
+	<div class="daohang">
+		<a href="login.html"><div class="login"></div></a>		
+		<div class="font">央视新闻</div>
+	</div>
+
+	<div class="swiper-container swiper-container-horizontal" id="swiper-container2">
 		<div class="swiper-wrapper">
-
-			<!-- 第一屏 -->
+			<div class="swiper-slide swiper-slide-visible active-nav">要闻</div>
+			<div class="swiper-slide swiper-slide-visible swiper-slide-next">直播</div>
+			<div class="swiper-slide swiper-slide-visible swiper-slide-active">V观</div>
+			<div class="swiper-slide">夜读</div>
+			<div class="swiper-slide">国际</div>
+			<div class="swiper-slide">体育</div>
+			<div class="swiper-slide">看台湾</div>
+			<div class="swiper-slide">军事</div>
+			<div class="swiper-slide">评论</div>
+			<div class="swiper-slide">财经</div>
+			<div class="swiper-slide">社会</div>
+			<div class="swiper-slide">地震</div>
+		</div>
+	</div>
+	<div class="swiper-container swiper-container-horizontal" id="swiper-container3">
+		<div class="swiper-wrapper">
 			<div class="swiper-slide">
-				<img src="img/title.png" alt="">
-				<img src="img/category/category.png" alt="">
-				<img src="img/category/search.png" alt="" style="z-index:10">
-				<!-- <img src="img/category/img.png" alt=""> -->
-				<div class="img">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
 					<div class="left">
-						<div class="images images1">
-							<span>头条新闻</span><br>
-							<span class="font">已更新9999条</span>
-						</div>
-						<div class="images images2">
-							<span>摄影</span><br>
-							<span class="font">已更新2345条</span>
-						</div>
-						<div class="images images3">
-							<span>建筑</span><br>
-							<span class="font">已更新2657条</span>
-						</div>
-					</div>
-					<div class="right">
-						<div class="images images4">
-							<span>读物</span><br>
-							<span class="font">已更新4534条</span>
-						</div>
-						<div class="images images5">
-							<span>旅游</span><br>
-							<span class="font">已更新5645条</span>
-						</div>
-						<div class="images images6">
-							<span>美食</span><br>
-							<span class="font">已更新6756条</span>
-						</div>				
-					</div>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
 			</div>
-			
-			<!-- 第二屏 -->
 			<div class="swiper-slide">
-				<img src="img/title.png" alt="">
-				<div class="daohang">
-					<div class="font">
-						<a href="">新闻</a>
-						<a href="">图片</a>
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
 					</div>
-					<div class="line"></div>
 				</div>
-				<div class="toutiao">
-					<a href="" class="active">头条</a>
-					<a href="">娱乐</a>
-					<a href="">热点</a>
-					<a href="">体育</a>
-					<a href="">无锡</a>
-					<a href="">订阅</a>
-				</div>
-				<img src="img/shouye/banner.png" alt="">
-				<div class="case case1">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>				
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
-				<div class="case case2">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>		
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
-				<div class="case case3">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>		
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
-				<div class="case case4">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>		
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
-				<div class="case case5">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>		
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
-				<div class="case case6">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>		
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
-				<div class="case case7">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>		
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
-				<div class="case case8">
+				<div class="case">
 					<div class="left">
-						<span class="one">无锡晚报 26分钟前</span><br>
-						<span class="two">欧洲历史博物馆开馆 多幅中世纪··</span><br>
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
 						<span class="three">阅读：1.72W·评论：9936</span>
 					</div>	
-					<div class="right"></div>		
+					<a href="xiangqing.html"><div class="right"></div></a>		
 				</div>
 			</div>
-
-			<!-- 第三屏 -->			
 			<div class="swiper-slide">
-				<img src="img/title.png" alt="">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner">
+					<div class="swiper-container" id="container1">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide slide1"></div>
+							<div class="swiper-slide slide2"></div>
+							<div class="swiper-slide slide3"></div>
+						</div>
+						<div class="swiper-pagination"></div> 
+					</div>
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
+				<div class="case">
+					<div class="left">
+						<span class="one">央视直播 26分钟前</span><br>
+						<span class="two"><a href="xiangqing.html">人民币兑美元中间价创近三周新高</a></span><br>
+						<span class="three">阅读：1.72W·评论：9936</span>
+					</div>	
+					<a href="xiangqing.html"><div class="right"></div></a>		
+				</div>
 			</div>
 		</div>
-		<!-- 分页器 -->
-		<div class="swiper-pagination"></div>
-	</div>
+	</div>	
+
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active">
+	        <span class="mui-icon mui-icon-home"></span>
+	        <span class="mui-tab-label">首页</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon iconfont icon-faxian"></span>
+	        <span class="mui-tab-label">电视+</span>
+	    </a>
+	    <a class="mui-tab-item">
+	        <span class="mui-icon iconfont icon-faxianios"></span>
+	        <span class="mui-tab-label">发现</span>
+	    </a>
+	    <a class="mui-tab-item"  href="login.html">
+	        <span class="mui-icon iconfont icon-iconfontren"></span>
+	        <span class="mui-tab-label">我</span>
+	    </a>
+	</nav>
 </body>
-<script>
-	function resize(originSize,type){
-		var type=type||"x";
-		if(type=="x"){
-			var widths=document.documentElement.clientWidth;
-			var scale=widths/originSize*100;
-		}else if(tyoe=="y"){
-			var heights=document.documentElement.clientHeight;
-			var scale=heights.originSize*100;
-		}
-		document.getElementsByTagName("html")[0].style.fontSize=scale+"px";
-	}
-	window.onload=function(){
-		resize(750,"x");
-	}
-	var mySwiper=new Swiper ('.swiper-container',{
+<script>	
+	var mySwiper=new Swiper ('#container1',{
 		direction: 'horizontal',
 		loop: true,
 		 // 分页器
 	    pagination: '.swiper-pagination',
-	    
+	    paginationClickable: true	    
 	})
+	var mySwiper=new Swiper ('#container2',{
+		direction: 'horizontal',
+		loop: true,
+		 // 分页器
+	    pagination: '.swiper-pagination',
+	    paginationClickable: true	    
+	})
+	var mySwiper2 = new Swiper('#swiper-container2',{
+		watchSlidesProgress : true,
+		watchSlidesVisibility : true,
+		slidesPerView : 1.5,
+		onTap: function(){
+					mySwiper3.slideTo( mySwiper2.clickedIndex)
+				}
+		})
+		var mySwiper3 = new Swiper('#swiper-container3',{
+
+		onSlideChangeStart: function(){
+					updateNavPosition()
+				}
+
+		})
+
+		function updateNavPosition(){
+				$('#swiper-container2 .active-nav').removeClass('active-nav')
+				var activeNav = $('#swiper-container2 .swiper-slide').eq(mySwiper3.activeIndex).addClass('active-nav');
+
+				if (!activeNav.hasClass('swiper-slide-visible')) {
+					console.log(1);
+					if (activeNav.index()>mySwiper2.activeIndex) {
+						console.log(2);
+						var thumbsPerNav = Math.floor(mySwiper2.width/activeNav.width())-1
+						mySwiper2.slideTo(activeNav.index()-thumbsPerNav)
+					}
+					else {
+						console.log(3);
+						mySwiper2.slideTo(activeNav.index())
+					}	
+			}
+		}
+
 </script>
 </html>
